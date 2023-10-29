@@ -22,5 +22,6 @@ do-install:
 .include "../../lang/go/go-module.mk"
 
 GOVERSSUFFIX=   121
+GO_BUILD_PATTERN= -tags="ui,release" ./... 
 
 .include "../../mk/bsd.pkg.mk"
